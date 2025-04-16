@@ -1,7 +1,7 @@
 # Kirana Store Demand Forecasting - Hackathon Project
 
 ## Project Overview
-This project was developed as part of a Data Science Hackathon. The objective is to forecast daily product demand in local kirana stores using transactional data. Accurate demand forecasting helps store owners manage inventory efficiently, minimize wastage, and avoid stockouts.
+This project was developed as part of a Data Science Hackathon. The objective is to forecast daily product demand in local kirana stores using transactional data. Accurate demand forecasting helps store owners manage inventory efficiently, minimize wastage, and avoid stockouts, improving their overall business operations.
 
 ## Dataset
 - **Filename**: `kiranaRO_train.csv`
@@ -33,7 +33,7 @@ The dataset for this project can be downloaded from the following Google Drive l
 - Analyzed product sales by hour of day and day of week
 
 ### 4. Modeling
-- Model used: XGBoost Regressor
+- Model used: XGBoost Regressor and Random Forest Regressor
 - Target variable: Daily quantity sold
 - Feature set: Includes date-based features and product encoding
 - Evaluation metrics: RMSE, R-squared (regression); F1-score, precision, recall (if binarized for demand classification)
@@ -44,14 +44,12 @@ The dataset for this project can be downloaded from the following Google Drive l
 
 ## Folder Structure
 kirana-forecasting-hackathon/
-├── data/
-│   └── kiranaRO_train.csv
-|   └── cleaned_kirana_data.csv
 ├── notebooks/
 │   └── kirana_forecasting_colab.ipynb  ← Downloaded from Colab
 ├── presentation/
 │   └── Hackathon_PPT.pptx
 ├── README.md
+├── visuals
 
 ## How to Run
 1. Open the notebook located in `notebooks/kirana_forecasting_colab.ipynb` using Google Colab or Jupyter.
